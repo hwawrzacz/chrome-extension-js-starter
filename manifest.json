@@ -4,15 +4,15 @@
   "version": "1.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "./popup/index.html",
     "default_icon": "favicon.png"
   },
   "background": {
-    "service_worker":"./scripts/service-worker/service-worker.js"
+    "service_worker":"./service-worker/service-worker.js"
   },
   "content_scripts": [
     {
-      "js": ["./scripts/content-scripts/content-script.js"],
+      "js": ["./content-scripts/content-script.js"],
       "matches": ["https://*/*"]
     }
   ],
