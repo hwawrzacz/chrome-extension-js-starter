@@ -1,0 +1,42 @@
+:root {
+  --default-popup-margin: 16px;
+  --popup-width: 300px;
+
+  --element-padding: 4px 12px;
+  --border-radius: 6px;
+
+  --popup-bg-color: #0d1117;
+  --button-bg-color: #1f6feb;
+  --font-color: #e6edf3;
+}
+
+body {
+  width: var(--popup-width);
+  padding: var(--default-popup-margin);
+  
+  background-color: var(--popup-bg-color);
+  color: var(--font-color);
+  border-radius: var(--border-radius);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+button {
+  padding: var(--element-padding);
+  border: none;
+
+  color: inherit;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background-color: var(--button-bg-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

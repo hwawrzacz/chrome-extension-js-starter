@@ -1,0 +1,23 @@
+{
+  "name": "Google Chrome Extension starter",
+  "description": "Starter for creating Google Chrome extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "favicon.png"
+  },
+  "background": {
+    "service_worker":"./scripts/service-worker/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["./scripts/content-scripts/content-script.js"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+}
